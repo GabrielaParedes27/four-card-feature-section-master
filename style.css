@@ -95,6 +95,34 @@ img {
   grid-row: 2/4;
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    margin-top: 4em;
+  }
+  .primary-title,
+  .bold-title {
+    font-size: 1.5em;
+  }
+
+  .cards {
+    margin-top: 4em;
+    grid-template-columns: 1fr;
+    padding: 0 2rem;
+  }
+  p {
+    font-size: 0.9em;
+    padding: 0 2em;
+    text-align: center;
+  }
+  .right-card,
+  .top-card,
+  .bottom-card,
+  .left-card {
+    grid-column: 1/2;
+    grid-row: auto;
+  }
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
